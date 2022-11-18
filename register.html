@@ -25,6 +25,7 @@
 
   </head>
   <body>
+    
     <div class="bggs">
       <h1 style="margin-top: 3%; margin-left: 30%;font-size: 5em;">Kerala Tourism</h1>
 
@@ -33,38 +34,41 @@
           <span style="color:blue">Login Here!</span>
         </a>
       </div>
-
+      <form action="./dashboard.html">
       <div class="mb-3 row" style="margin-top: 2%;margin-left: 68%;">
-        <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+        <label for="staticEmail" class="col-sm-2 col-form-label" >Name</label>
         <div class="col-sm-5" style="margin-left: 2%;">
-          <input type="name" class="form-control" id="inputEmail" placeholder="Enter Your Name">
+          <input type="name" class="form-control" id="inputEmail"  placeholder="Enter Your Name" required>
         </div>
       </div>
 
       <div class="mb-3 row" style="margin-top: 1%;margin-left: 68%;">
         <label for="staticEmail" class="col-sm-2 col-form-label">Mobile</label>
         <div class="col-sm-5" style="margin-left: 2%;">
-          <input type="mobile" class="form-control" id="inputEmail" placeholder="Enter Your Mobile">
+          <input type="tel" id="phone" class="form-control"
+          pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})|[0-9]{3}.[0-9]{3}.[0-9]{4}|[0-9]{3} [0-9]{3} [0-9]{4}))" placeholder="Enter Your Mobile" required>
         </div>
       </div>
 
       <div class="mb-3 row" style="margin-top: 1%;margin-left: 68%;">
         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-5" style="margin-left: 2%;">
-          <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
         </div>
       </div>
 
       <div class="mb-3 row" style="margin-top: 1%;margin-left: 68%;">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <label for="inputPassword" class="col-sm-2 col-form-label" >Password</label>
         <div class="col-sm-5" style="margin-left: 2%;">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password">
+          <input type="password" class="form-control" id="inputPassword"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" required>
         </div>
       </div>
 
-      <a href="dashboard.html">
-        <button type="button" class="btn btn-primary col-sm-1" style="margin-top: 10px;margin-left: 75%; margin-right: 400px;">Registeration</button>
-      </a>
+      <!-- <a href="dashboard.html" >
+        Registration
+      </a> -->
+      <input type="submit" style="margin-top: 10px;margin-left: 75%; margin-right: 400px;" class="btn btn-primary col-sm-1" value="Registration">
+    </form>
 
       
   
